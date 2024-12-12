@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style> #section1{color:white; background-color:hsl(305, 100%, 51%); height:400px;}
+    #section2{color:white; background-color:#505050; height:400px;}
+    #section31{color:#131212; background-color:#fffb05; height:400px;}
+    #section32{color:white; background-color:#505050; height:400px;}
+    body{position: relative;}
+    nav{position:fixed;}
+    h2{text-decoration: underline;}
+   </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--nav bar-<a> is used to jump to a section in scrollable area-->
+    <!--Horizontal-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavBar">
+                  <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class=navbar-brand href="#">NavBar</a>
+                </div>
+
+                <div class="colapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <!--dropdown-->
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 3 <span
+                        class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#section31">Section 3.1</a></li>
+                    <li><a href="#section32">Section 3.2</a></li>
+                </ul>
+            </li>
+            </ul>
+            </div>
+            </div>
+            </div>
+    </nav>
+
+    <div class="container" id="section1"><br><br> <br>      
+         <h2> Section 1</h2>
+       <p> Add data-spy="scroll" to the element that should be used as the scrollable area <br> <h3>Container </h3></p>
+    </div>
+    <div class="container-fluid" id="section2"><br><br>
+        <h2> Section 2</h2>
+        <p>Then add the <code>data-target</code> attribute with a value of the id or the class name of the navigation bar (<code>.navbar</code>). This is to make sure that the navbar is connected with the scrollable area. <br> <h3> Conatiner-fluid</h3></p>
+    </div>
+<div class="container" id="section31"><br><br>
+    <h2> Section 3.1</h2>
+    <p>Note that scrollable elements must match the ID of the links inside the navbar's list items <br>
+    <h3> Conatiner</h3>  </p>
+</div>
+<div class="container-fluid" id="section32"><br><br>
+    <h2> Section 3.2</h2>
+    <p>The optional data-offset attribute specifies the number of pixels to offset from top when calculating the position of scroll. This is useful when you feel that the links inside the navbar changes the active state too soon or too early when jumping to the scrollable elements. Default is 10 pixels. <br>
+    <h3> Conatiner-fluid</h3></p>
+</div>
+
+
+    <!--Veritical
+    <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+    
+        <div class="container">
+            <div class="row">
+                <nav class="col-sm-3" id="myScrollspy">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#section1">Section 1</a></li>
+                        <li><a href="#section2">Section 2</a></li>
+                        <li><a href="#section3">Section 3</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#section41">Section 4-1</a></li>
+                                <li><a href="#section42">Section 4-2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+        <div class="col-sm-9">
+            <div id="section1">
+                <h1>Section 1</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+            </div>
+            <div id="section2">
+                <h1>Section 2</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+            </div>
+            <div id="section3">
+                <h1>Section 3</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+            </div>
+            <div id="section41">
+                <h1>Section 4-1</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+            </div>
+            <div id="section42">
+                <h1>Section 4-2</h1>
+                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+            </div>
+        </div>
+        </div>
+        </div>
+ -->
+    
+</body>
+</html>
